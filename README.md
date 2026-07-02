@@ -20,7 +20,6 @@
 > 한 번씩 실행하면 됩니다.
 
 ```bash
-cd /path/to/your-project   # 적용할 프로젝트 폴더로 이동
 curl -fsSL https://raw.githubusercontent.com/SheepJH/claude-error-handling-kit/main/install.sh | bash
 ```
 
