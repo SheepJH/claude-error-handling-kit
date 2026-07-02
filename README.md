@@ -14,9 +14,13 @@
 
 ## 설치 (한 줄)
 
-프로젝트 루트에서:
+> ⚠️ **반드시 적용할 프로젝트 폴더 안에서 실행하세요.** 이 명령은 "현재 위치한 폴더"에
+> `.claude` 폴더를 만듭니다. 홈 디렉토리(`~`)에서 실행하면 개인 전역 설정 위치에
+> 설치되어 모든 프로젝트에 적용되니 주의하세요. 프로젝트가 여러 개라면 각 프로젝트에서
+> 한 번씩 실행하면 됩니다.
 
 ```bash
+cd /path/to/your-project   # 적용할 프로젝트 폴더로 이동
 curl -fsSL https://raw.githubusercontent.com/SheepJH/claude-error-handling-kit/main/install.sh | bash
 ```
 

@@ -8,6 +8,12 @@ REPO="SheepJH/claude-error-handling-kit"
 BRANCH="main"
 BASE="${KIT_BASE_URL:-https://raw.githubusercontent.com/$REPO/$BRANCH/.claude}"
 
+if [ "$PWD" = "$HOME" ]; then
+  echo "❌ 홈 디렉토리에서 실행하면 개인 전역 설정(~/.claude)에 설치되어 모든 프로젝트에 적용됩니다."
+  echo "   적용할 프로젝트 폴더로 이동한 뒤 다시 실행하세요:  cd /path/to/your-project"
+  exit 1
+fi
+
 if ! command -v node >/dev/null 2>&1; then
   echo "❌ Node.js가 필요합니다 (hook 실행에 사용). 설치 후 다시 시도하세요."
   exit 1
